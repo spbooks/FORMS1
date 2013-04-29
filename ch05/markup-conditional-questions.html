@@ -1,0 +1,93 @@
+<!-- Would you like gift wrapping -->
+<div>
+	<ul>
+		<li>
+			<input type="checkbox" id="gift-wrapping" name="gift-wrapping" value="yes" />
+			<label for="gift-wrapping">This wine is a gift, please gift wrap for me</label>
+		</li>
+	</ul>
+</div>
+<!-- Gift Wrapping Details -->
+<fieldset id="section-gift-wrapping">
+	<legend>Gift Wrapping Details</legend>
+	<p class="note">If you would like gift wrapping please fill out the following</p>
+	<div>
+		<label class="heading">Box Type</label>
+		<ul>
+			<li>
+				<input type="radio" id="gift-wrapping-type-wooden" name="gift-wrapping-type" value="wooden" />
+				<label for="gift-wrapping-type-wooden">Authentic wooden create</label>
+			</li>
+			<li>
+				<input type="radio" id="gift-wrapping-type-oak" name="gift-wrapping-type" value="oak" />
+				<label for="gift-wrapping-type-oak">Hand crafted oak Box</label>
+			</li>
+			<li>
+				<input type="radio" id="gift-wrapping-type-contemporary" name="gift-wrapping-type" value="contemporary" />
+				<label for="gift-wrapping-type-oak">Contemporary Box designed by Ji Lu</label>
+			</li>
+		</ul>
+		<div>
+			<label for="gift-wrapping-message">Message</label>
+			<textarea id="gift-wrapping-message" name="gift-wrapping-message"></textarea>
+		</div>
+	</div>
+</fieldset>
+
+<script type="text/javascript">
+	var conditionalSection = $('#section-gift-wrapping'),
+		dependantField = $('input[name=gift-wrapping]');
+		
+	// Trigger change event for IE
+	if ($.browser.msie) {
+		$(dependantField).click(function() {
+			dependantField.blur().focus();
+		});
+		var label = $("label[for=" + dependantField.attr("id") + "]");
+		$(label).click(function() {
+			dependantField.blur().focus();
+		});
+	}
+	
+	dependantField.bind('change', function() {
+		// If valid and not visible show conditional section
+		if (dependantField.is(':checked') && conditionalSection.not(':visible')) {
+			conditionalSection.slideDown();
+		}
+		// Otherwise if visible hide the conditional section
+		else if (conditionalSection.is(':visible')) {
+			conditionalSection.slideUp();
+		}
+	});
+	
+	// Trigger check on load
+	dependantField.trigger('change');
+/*
+
+(function($) {
+$.extend($.fn, {
+	conditionalQuestions : function(options) {			
+		// Only continue if both the conditonal section and dependant field exists
+		if ( (!options.conditionalSection.size()) || (!options.dependantField.size()) ) {
+			return false;
+		}
+	}
+});
+})(jQuery);
+
+// Trigger change event for IE
+if ($.browser.msie) {
+	$(dependantField).click(function() {
+		dependantField.blur().focus();
+	});
+	var label = $("label[for=" + dependantField.attr("id") + "]");
+	$(label).click(function() {
+		dependantField.blur().focus();
+	});
+}
+
+$().change(function() {
+  // Do stuff here
+});
+*/
+</script>

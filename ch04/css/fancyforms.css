@@ -1,0 +1,254 @@
+/*
+	-----------------------------------------------
+    Fancy Form Styling
+	-----------------------------------------------
+	+ General Form Styling
+	  - Fieldsets & Legends
+	  - Introduction Text
+	  - Fields
+	+ Sign Up Form
+	  - Log In link
+	  - Date of Birth
+	  - Submit
+*/
+
+/* !General Form Styling
+--------------------- */
+/* -- !Fieldsets & Legends -- */
+fieldset {
+	border: none;
+	position: relative;
+	padding: 20px 0 0;
+}
+	
+/*
+	fieldset legend span {
+		border-bottom: 1px solid #fff;
+		background: url(images/bg-ccc.gif) 0 100% repeat-x;
+		display: block;
+		font-size: 2.25em;
+		line-height: 1;
+		margin: 20px 0;
+		padding-bottom: 20px;
+		position: absolute;
+		width: 560px;
+	}
+	
+	fieldset fieldset {
+		padding: 20px;
+	}
+*/
+	
+/* -- !Introduction Text -- */
+.introduction {
+	font-size: 1.5em;
+	margin: 0 0 2em;
+}
+
+/* -- !Fields -- */
+fieldset div {
+	background: url(images/bg-form-fieldset-div.png) repeat-y 0 0;
+    margin: 0 0 10px;
+    overflow: hidden;
+    padding: 5px 5px 5px 0;
+}
+
+fieldset div.controls {
+	margin: 25px 0 0;
+	padding: 0;
+}
+
+	/* Labels */
+    fieldset div label {
+    	color: #666;
+    	float: left;
+    	font-size: 1.16em;
+        font-weight: bold;
+        line-height: 1.1;
+        margin: 9px 20px 0 0;
+        width: 140px;
+    }
+
+	/* Input defaults */
+	fieldset div input,
+	fieldset div textarea,
+	fieldset div select {
+		color: #333;
+	    display: block;
+	    font-size: 14px;
+	    font-family: Arial, Helvetica, sans-serif;
+	    float: left;
+	    line-height: 1;
+	    margin: 0;
+	}
+    
+    /* Text inputs */
+    fieldset div input {
+    	padding: 6px 3px;
+        width: 288px;
+    }
+    
+    /* Select menus */
+    fieldset div select {
+    	padding: 0 0 0 3px;
+        width: 291px;
+    }        
+    
+    /* Textareas */
+    fieldset div textarea {
+        height: 89px;
+        padding: 3px;
+        width: 269px;
+    }
+    
+    /* File Upload */
+    fieldset div input[type=file] {
+    	border: inherit;
+    	padding: inherit;
+    	width: auto;
+    }
+        
+    /* Radio buttons + checkboxes */
+    fieldset div ul {
+    	float: left;
+    	margin: 5px 0 0 160px;
+    }
+    
+	    fieldset div ul li {
+	        margin: 0 0 5px;
+	        padding: 0;
+	    }
+	                                 
+	        fieldset div ul li label {
+	            display: inline;
+	            float: none;
+		    	font-size: 1em;
+	            font-weight: normal;
+	            margin: 0;
+	            padding: 0;
+	        }
+	                        
+	        fieldset div ul li input {
+	            border: inherit;
+	            display: inline;
+	            margin: 0 5px 0 0;
+	            padding: 0;
+	            width: auto;
+	        }
+
+	/* Submit */
+	fieldset div.controls {
+		background: none;
+	}
+	
+		fieldset div.controls input {
+			float: right;
+			width: auto;
+		}
+
+/* !Sign Up Form
+--------------------- */
+/* -- Login -- */
+#container {
+	position: relative;
+}
+
+#sign-up .log-in {
+	background: #eaeaea;
+	margin: 0;
+	line-height: 1;
+	padding: 10px 12px;
+	position: absolute;
+	right: 20px;
+	top: 30px;
+}
+
+	#sign-up .log-in a {
+		font-weight: bold;
+	}
+
+/* -- !Date of Birth -- */
+fieldset fieldset#section-dob {
+	background: url(images/bg-form-fieldset-div.png) repeat-y 0 0;
+	color: #666;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+	fieldset fieldset#section-dob legend span {
+		background: none;
+		border: none;
+    	font-size: 1.16em;
+        font-weight: bold;
+        line-height: 1.1;
+        margin: 9px 20px 0 0;
+		padding: 0;
+		position: absolute;
+		width: 140px;
+	}
+	
+	fieldset fieldset#section-dob div {
+		background: none;
+		float: left;
+		margin: 0;
+	}
+	
+		fieldset fieldset#section-dob div label {
+			position: absolute;
+			top: -999em;
+		}
+		
+		fieldset fieldset#section-dob div select {
+			width: 85px;
+		}
+		
+		/* Line up to grid */
+		fieldset fieldset#section-dob div select#dob_month {
+			margin: 0 0 0 160px; 
+			width: 108px;
+		}
+		
+		/* Whitespace */
+		fieldset fieldset#section-dob div select#dob_day {
+			margin: 0 5px;
+		}
+		
+	fieldset fieldset#section-dob em.note {
+		clear: left;
+		display: block;
+		margin: 0 0 0.5em 165px;
+		font-style: normal;
+	}
+		
+/* -- !Terms of Service Agreement -- */
+#field-agree-tos {
+	background: none;
+}
+
+/* -- !Your Profile Link -- */
+#field-profile-link .profile-link-prefix {
+	display: block;
+	float: left;
+	font-size: 1.16em;
+	line-height: 1.1;
+	margin: 9px 10px 0 0;
+	text-align: right;
+	width: 133px;
+}
+
+#field-profile-link input {
+	width: 145px;
+}
+
+/* -- !Submit -- */
+#sign-up fieldset .controls input#submit {
+	background: url(images/ir-submit-create-profile.png) no-repeat 0 0;
+	border: none;
+	cursor: pointer;
+	float: right;
+	height: 32px;
+	margin: 0;
+	overflow: hidden;
+	padding: 32px 0 0 136px;
+	width: 136px;
+}

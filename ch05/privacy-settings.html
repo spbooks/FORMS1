@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+	<title>Fancy Form Design: Privacy Settings</title>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" media="screen" href="css/screen.css" />
+	<!--[if lte IE 8]>
+	<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css" />
+	<![endif]-->
+
+	<!-- JS -->
+	<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.validate.pack.js"></script>
+	<script type="text/javascript" src="js/init.js"></script>
+</head>
+<body id="privacy-settings">
+	<!-- Container -->	
+	<div id="container"><div id="container-inner">
+
+		<h1>Privacy Settings</h1>
+		<form action="#" method="get">
+			<fieldset>
+				<p class="introduction">We understand that your health and fitness is personal. We respect your privacy. Please let us know what you would like to be visable.</p>
+				 <table summary="Profile visibility settings">
+				 		<thead>
+				 			<tr>
+				 				<td></td>
+					 			<th class="private">Private</th>
+					 			<th class="contacts">Contacts</th>
+					 			<th class="public">Public</th>
+					 		</tr>
+				 		</thead>
+				 		<tbody>
+				 			<tr>
+					 			<th>Gender</th>
+					 			<td class="private"><input type="radio" name="gender" id="gender-private" value="private" checked="checked" /></td>
+					 			<td class="contacts"><input type="radio" name="gender" id="gender-contacts" value="contacts" /></td>
+					 			<td class="public"><input type="radio" name="gender" id="gender-public" value="public" /></td>
+					 		</tr>
+				 			<tr>
+					 			<th>Birth day and month</th>
+					 			<td class="private"><input type="radio" name="dob_date" id="dob-date-private" value="private" checked="checked" /></td>
+					 			<td class="contacts"><input type="radio" name="dob_date" id="dob-date-contacts" value="contacts" /></td>
+					 			<td class="public"><input type="radio" name="dob_date" id="dob-date-public" value="public" /></td>
+					 		</tr>
+				 			<tr>
+					 			<th>Birth year</th>
+					 			<td class="private"><input type="radio" name="dob_year" id="dob-year-private" value="private" checked="checked" /></td>
+					 			<td class="contacts"><input type="radio" name="dob_year" id="dob-year-contacts" value="contacts" /></td>
+					 			<td class="public"><input type="radio" name="dob_year" id="dob-year-public" value="public" /></td>
+					 		</tr>
+				 			<tr>
+					 			<th>Location</th>
+					 			<td class="private"><input type="radio" name="location" id="location-private" value="private" checked="checked" /></td>
+					 			<td class="contacts"><input type="radio" name="location" id="location-contacts" value="contacts" /></td>
+					 			<td class="public"><input type="radio" name="location" id="location-public" value="public" /></td>
+					 		</tr>
+				 			<tr class="with-note">
+					 			<th>Fitness journal entries</th>
+					 			<td class="private"><input type="radio" name="entries" id="entries-private" value="private" checked="checked" /></td>
+					 			<td class="contacts"><input type="radio" name="entries" id="entries-contacts" value="contacts" /></td>
+					 			<td class="public"><input type="radio" name="entries" id="entries-public" value="public" /></td>
+					 		</tr>
+					 		<tr>
+					 			<th></th>
+					 			<td colspan="3" class="note">This can be changed on a post-by-post basis.</td>
+					 		</tr>
+				 			<tr class="with-note">
+					 			<th>Your photos</th>
+					 			<td class="private"><input type="radio" name="photos" id="photos-private" value="private" checked="checked" /></td>
+					 			<td class="contacts"><input type="radio" name="photos" id="photos-contacts" value="contacts" /></td>
+					 			<td class="public"><input type="radio" name="photos" id="photos-public" value="public" /></td>
+					 		</tr>
+					 		<tr>
+					 			<th></th>
+					 			<td colspan="3" class="note">This can be changed on a post-by-post basis.</td>
+					 		</tr>
+					 		<tr>
+					 			<th>Your fitness stats</th>
+					 			<td class="private"><input type="radio" name="stats" id="stats-private" value="private" checked="checked" /></td>
+					 			<td class="contacts"><input type="radio" name="stats" id="stats-contacts" value="contacts" /></td>
+					 			<td class="public"><input type="radio" name="stats" id="stats-public" value="public" /></td>
+					 		</tr>
+				 		</tbody>
+				 </table>
+				
+				<!-- Controls -->
+				<div class="controls">
+					<input id="submit" name="submit" type="submit" value="Update Settings" />
+				</div>
+			</fieldset>
+		</form>
+			
+	</div></div>	<!-- /Container -->
+	
+</body>
+</html>

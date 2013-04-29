@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+	<title>Fancy Form Design: Advanced Search</title>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" media="screen" href="css/screen.css" />
+	<!--[if lte IE 8]>
+	<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css" />
+	<![endif]-->
+	
+	<!-- JS -->
+	<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.validate.pack.js"></script>
+	<script type="text/javascript" src="js/init.js"></script>
+</head>
+<body id="advanced-search">
+	<!-- Container -->	
+	<div id="container"><div id="container-inner">
+		<h1>Advanced Search</h1>
+		<form action="#" method="get">
+			<fieldset>
+				<!-- Search for -->
+				<div>
+					<label for="search_for">Your current password</label>
+					<select name="search_for" id="search_for">
+						<option value="all">All of these words</option>
+						<option value="any">Any of these words</option>
+					</select>
+				</div>
+				
+				<!-- Keywords -->
+				<div id="field-keywords">
+					<label for="keywords">Keywords</label>
+					<input type="text" name="keywords" id="keywords" />
+				</div>
+				
+				<!-- Search in -->
+				<div>
+					<label for="search_in">Search in</label>
+					<select name="search_in" id="search_in">
+						<option value="people">People</option>
+						<option value="articles">Articles</option>
+						<option value="entire">Entire website</option>
+					</select>
+				</div>
+				
+				<!-- Controls -->
+				<div class="controls">
+					<input id="submit" name="submit" type="submit" value="Search" />
+				</div>
+			</fieldset>
+		</form>
+			
+	</div></div>	<!-- /Container -->
+	
+</body>
+</html>

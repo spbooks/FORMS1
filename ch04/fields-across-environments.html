@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+	<title>Fancy Form Design: Sign Up</title>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" media="screen" href="css/reset.css" />
+	<style type="text/css">
+		html {
+			background: #eee;
+		}
+		
+		body {
+			background: #eee url(css/images/bg-body.gif);
+			color: #333;
+			font: 75%/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+			padding: 20px;
+		}
+		#container {
+			background: url(css/images/bg-form-btm.png) no-repeat 100% 100%;
+			padding-bottom: 18px;
+			width: 600px;
+		}
+		
+		#container-inner {
+			background: #fff url(css/images/bg-form.gif) repeat-x;
+			border: 1px solid #fff;
+			border-color: #fff #fff #ababab;
+			padding: 20px;
+		}
+		
+		fieldset {
+			border: none;
+			position: relative;
+			padding: 20px 0 0;
+		}
+			
+			fieldset legend span {
+				border-bottom: 1px solid #ccc;
+				display: block;
+				font-size: 2.25em;
+				line-height: 1.1;
+				margin: 0;
+				padding-bottom: 20px;
+				position: absolute;
+				width: 560px;
+			}
+		
+		p {
+			margin: 0 0 1.5em;
+			padding: 0;
+		}
+		
+		fieldset div {
+		    margin: 0 0 10px;
+		    overflow: hidden;
+		}
+		
+		    fieldset div label {
+		    	float: left;
+		        line-height: 1.1;
+		        margin: 5px 20px 0 0;
+		        width: 140px;
+		    }
+		
+			fieldset div input,
+			fieldset div textarea,
+			fieldset div select {
+			    display: block;
+			    font-size: 14px;
+			    font-family: Arial, Helvetica, sans-serif;
+			    line-height: 1;
+				margin: 0 0 0 160px;
+			}
+						
+	    /* Radio buttons + checkboxes */
+	    fieldset div ul {
+	    	margin: 0 0 0 160px;
+	    }
+	    
+	    fieldset div ul li {
+	        margin: 0 0 5px;
+	        padding: 0;
+	    }
+	                                 
+	        fieldset div ul li label {
+	            display: inline;
+	            float: none;
+		    	font-size: 1em;
+	            font-weight: normal;
+	            margin: 0;
+	            padding: 0;
+	        }
+	                        
+	        fieldset div ul li input {
+	            border: inherit;
+	            display: inline;
+	            margin: 0 5px 0 0;
+	            padding: 0;
+	            width: auto;
+	        }
+	    
+	    /* Submit */
+	    .controls input {
+	    	float: right;
+	    }
+	</style>
+</head>
+<body>
+	<!-- Container -->	
+	<div id="container"><div id="container-inner">
+		<form action="#" method="get">
+			<fieldset>
+				<!-- Generic -->
+				<div class="form-item">
+					<label for="sample-form-item-text">Text input</label>
+					<input type="text" id="sample-form-item-text" name="sample-form-item-text" value="" maxlength="100" />						
+				</div>
+				<!-- Textarea -->
+				<div class="form-item">
+					<label for="sample-form-item-textarea">Textarea</label>
+					<textarea id="sample-form-item-textarea" name="sample-form-item-textarea" rows="10" cols="30"></textarea>			
+				</div>
+				<!-- Select -->
+				<div class="form-item">
+					<label for="sample-form-item-select">Select Menu</label>
+					<select id="sample-form-item-select" name="sample-form-item-select">
+						<option value="1">Option</option>
+						<option value="2">Option 2</option>
+						<option value="3">Option 3</option>
+						<option value="4">Option 4</option>
+					</select>
+				</div>
+				<!-- Select Multiple -->
+				<div class="form-item">
+					<label for="sample-form-item-select-multiple">Select Menu</label>
+					<select id="sample-form-item-select-multiple" name="sample-form-item-select-multiple" multiple="multiple">
+						<option value="1">Option</option>
+						<option value="2">Option 2</option>
+						<option value="3">Option 3</option>
+						<option value="4">Option 4</option>
+					</select>
+				</div>
+				<!-- List of radio buttons -->
+				<div class="form-item">
+					<label class="heading">Radio Buttons</label>
+					<ul>
+						<li>
+							<input type="radio" value="Yes" id="sample-form-item-radio_yes" name="sample-form-item-radio" />
+							<label for="sample-form-item-radio_yes">Option 1</label>
+						</li>
+						<li>
+							<input type="radio" value="No" id="sample-form-item-radio_no" name="sample-form-item-radio"/>
+							<label for="sample-form-item-radio_no">Option 2</label>
+						</li>
+						</ul>
+				</div>
+				<!-- List of elements -->
+				<div class="form-item">
+					<label class="heading">Checkboxes</label>
+					<ul>
+						<li>
+							<input type="checkbox" value="sample-value-1" id="sample-form-item-checkbox_1" name="sample-form-item-checkbox" />
+							<label for="sample-form-item-checkbox_1">Option 1</label>
+						</li>
+						<li>
+							<input type="checkbox" value="sample-value-1" id="sample-form-item-checkbox_2" name="sample-form-item-checkbox"/>
+							<label for="sample-form-item-checkbox_2">Option 2</label>
+						</li>
+					</ul>
+				</div>
+				<!-- File Chooser -->
+				<div class="form-item">
+					<label for="sample-form-item-text">File Chooser</label>
+					<input type="file" id="sample-form-item-file" name="sample-form-item-file" value="" />						
+				</div>
+				<!-- Controls -->
+				<div class="controls">
+					<input id="submit" name="submit" type="submit" value="Submit Form" />
+				</div>
+			</fieldset>
+		</form>			
+	</div></div>	<!-- /Container -->
+	
+</body>
+</html>

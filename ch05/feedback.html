@@ -1,0 +1,54 @@
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+	<title>Fancy Form Design: Feedback</title>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" media="screen" href="css/screen.css" />
+	<!--[if lte IE 8]>
+	<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css" />
+	<![endif]-->
+
+	<!-- JS -->
+	<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.validate.pack.js"></script>
+	<script type="text/javascript" src="js/init.js"></script>
+</head>
+<body id="feedback">
+	<!-- Container -->	
+	<div id="container"><div id="container-inner">
+		<h1>Feedback</h1>
+		<form action="#" method="get">
+			<fieldset>
+				<p class="introduction">Tell us what you think about the site. What is working for you? What would you like to see inproved? Your opinion is very valuable to us. <strong>All fields are required.</strong></p>
+				<!-- Your Name -->
+				<div>
+					<label for="name">Your name <abbr title="Required field">*</abbr></label>
+					<input type="text" name="name" id="name" />
+				</div>
+				
+				<!-- Email -->
+				<div>
+					<label for="email">Your email address</label>
+					<input type="text" name="email" id="email" />
+				</div>
+				
+				<!-- Password -->
+				<div>
+					<label for="comment">Your comments</label>
+					<textarea name="comment" id="comment" rows="10" cols="5"></textarea>
+				</div>
+				
+				<!-- Controls -->
+				<div class="controls">
+					<input id="submit" name="submit" type="submit" value="Submit Feedback" />
+				</div>
+			</fieldset>
+		</form>
+			
+	</div></div>	<!-- /Container -->
+	
+</body>
+</html>

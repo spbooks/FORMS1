@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+	<title>Fancy Form Design: Change Password</title>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" media="screen" href="css/screen.css" />
+	<!--[if lte IE 8]>
+	<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css" />
+	<![endif]-->
+	
+	<!-- JS -->
+	<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.validate.pack.js"></script>
+	<script type="text/javascript" src="js/init.js"></script>
+</head>
+<body id="change-password">
+	<!-- Container -->	
+	<div id="container"><div id="container-inner">
+		<h1>Change Password</h1>
+		<form action="#" method="get">
+			<fieldset>
+				<!-- Your current password -->
+				<div>
+					<label for="password_current">Your current password</label>
+					<input type="text" name="password_current" id="password_current" />
+				</div>
+				
+				<!-- Your new password -->
+				<div>
+					<label for="password_new">Your new password</label>
+					<input type="text" name="password_new" id="password_new" />
+				</div>
+				
+				<!-- Confirm password -->
+				<div>
+					<label for="password_confirm">Confirm password</label>
+					<input type="text" name="password_confirm" id="password_confirm" />
+				</div>
+				
+				<!-- Controls -->
+				<div class="controls">
+					<input id="submit" name="submit" type="submit" value="Save Password" />
+				</div>
+			</fieldset>
+		</form>
+			
+	</div></div>	<!-- /Container -->
+	
+</body>
+</html>

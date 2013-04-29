@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+	<title>Fancy Form Design: Search</title>
+	
+	<!-- CSS -->
+	<style type="text/css">
+		html {
+			background: #eee;
+		}
+		
+		body {
+			background: #eee url(css/images/bg-body.png);
+			color: #333;
+			font: 75%/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+			padding: 20px;
+		}
+		#container {
+			background: url(css/images/bg-form-btm.png) no-repeat 100% 100%;
+			padding-bottom: 18px;
+			width: 600px;
+		}
+		
+		#container-inner {
+			background: #fff url(css/images/bg-form.gif) repeat-x;
+			border: 1px solid #fff;
+			border-color: #fff #fff #ababab;
+			padding: 20px;
+		}
+		
+		fieldset {
+			border: none;
+			position: relative;
+			padding: 70px 0 0;
+		}
+			
+			fieldset legend span {
+				border-bottom: 1px solid #ccc;
+				display: block;
+				font-size: 2.25em;
+				line-height: 1.1;
+				margin: 0;
+				padding-bottom: 20px;
+				position: absolute;
+				width: 560px;
+			}
+		
+		p {
+			margin: 0 0 1.5em;
+			padding: 0;
+		}
+		
+		.introduction {
+			font-size: 1.5em;
+			line-height: 1.5;
+			margin: 0 0 2em;
+		}
+		
+		abbr {
+			border: none;
+			display: none; /* Hide for now */
+			color: red;
+		}
+			
+		/* -- Search -- */
+		#container-inner {
+			background: #861000;
+		}
+		
+		fieldset div {
+			float: left;
+		    margin: 0;
+		    overflow: hidden;
+		}
+		
+		    fieldset div#field-search label {
+		    	position: absolute;
+		    	top: -999em;
+		    }
+		
+			fieldset div input {
+				background: #FFF url(css/images/bg-input-search.png) no-repeat 0 0;
+				border: none;
+				display: block;
+				float: left;
+				font: 14px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
+				float: left;
+				padding: 6px 10px 7px;
+				width: 243px;
+			}
+						
+			fieldset div.controls input {
+				background: url(css/images/bg-input-search-submit.png) no-repeat 0 0;
+				cursor: pointer;
+				height: 31px;
+				margin: 0 0 0 20px;
+				overflow: hidden;
+				padding: 31px 0 0 66px;
+				width: 66px;
+			}
+		
+	</style>
+</head>
+<body id="grunge">
+	<!-- Container -->	
+	<div id="container"><div id="container-inner">
+		<form action="#" method="get" id="search">
+			<fieldset>
+				<!-- Search -->
+				<div id="field-search">
+					<label for="name">Search</label>
+					<input type="text" name="search" id="search" />
+				</div>
+							
+				<!-- Controls -->
+				<div class="controls">
+					<input id="submit" name="submit" type="submit" value="Search" />
+				</div>
+			</fieldset>
+		</form>			
+	</div></div>	<!-- /Container -->
+	
+</body>
+</html>
